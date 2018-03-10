@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './App'
 
-export function createComponent(name, properties) {
+export function render(name, properties) {
   new Vue({
-    el: "#app",
+    el: '#' + name,
     render: h => h(App, {
       props: {
         componentName: name,

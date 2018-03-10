@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>VueJS dynamic components</title>
+    <link rel="stylesheet" href="static/css/main.bundle.css">
+</head>
+<body>
+
+<h1>VueJS dynamic components</h1>
+
+<div id="hello"></div>
+
+<div id="hello2"></div>
+
+<script
+    type="text/javascript"
+    src="static/main.min.js">
+</script>
+<script>
+  render(<?= $view; ?>, <?= $datas; ?>);
+  render('hello2', {greet: 'from html'});
+</script>
+</body>
+</html>

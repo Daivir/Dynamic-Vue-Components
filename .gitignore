@@ -1,7 +1,12 @@
-.idea
 .git
+
+# Dependencies
 package-lock.json
 node_modules
 
-build/*
-!build/.gitkeep
+# Generated files
+static/*
+!static/.gitkeep
+
+# IDE folders and files
+.idea
