@@ -1,11 +1,11 @@
 <template>
 	<div class="hello">
-		<h1>Hello World from single file component!</h1>
+		<h1>Hello {{ greet }}!</h1>
 	</div>
 </template>
 
 <script>
 	module.exports = {
-
+	  props: ["greet"]
 	}
 </script>

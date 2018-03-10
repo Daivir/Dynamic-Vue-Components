@@ -3,10 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>VueJS dynamic components</title>
-	<script
-			type="text/javascript"
-			src="build/main.min.js">
-	</script>
 </head>
 <body>
 
@@ -14,8 +10,12 @@
 
 <div id="app"></div>
 
+<script
+		type="text/javascript"
+		src="build/main.min.js">
+</script>
 <script>
-	// createComponent('hello', {...})
+	createComponent('hello', {greet: "from HTML file"})
 </script>
 </body>
 </html>
